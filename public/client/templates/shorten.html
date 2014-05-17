@@ -1,0 +1,11 @@
+
+  <div ng-controller="shorten">
+  <form name="myForm">
+      <input type='url' class='text' name='url' ng-model='url' required>
+      <button ng-click="submit()" class="button">Submit</button>
+  </form>
+  <span>{{ url }} </span>
+  </div>
+
+
+  <div class='message'></div>

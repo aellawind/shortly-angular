@@ -1,0 +1,34 @@
+<!doctype html>
+<html ng-app="shortlyApp">
+  <head>
+    <meta charset="utf-8" />
+    <title>Shortly</title>
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <script src="/lib/jquery.js"></script>
+    <script src="/lib/underscore.js"></script>
+    <!-- <script src="/lib/backbone.js"></script> -->
+    <!-- <script src="/lib/handlebars.js"></script> -->
+
+  </head>
+
+
+  <body>
+    <h1>Shortly</h1>
+
+    <div class='navigation'>
+      <ul>
+        <li><a href='/' class='index'>All Links</a></li>
+        <li><a href='/shorten' class='shorten'>Shorten</a></li>
+      </ul>
+      <a href='/logout' class='logout'>Logout</a>
+    </div>
+
+    <div ng-view> </div>
+
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-route/angular-route.js"></script>
+    <script src="/client/js/app.js"></script>
+
+  </body>
+
+</html>
